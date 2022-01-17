@@ -162,7 +162,17 @@ header label{
 }
 
 
-@media (max-width:800px){
+@media (max-width:991px){
+
+    section{
+        padding:0 3%;
+        padding-top: 7.5rem;
+    }
+
+}
+
+
+@media (max-width:758px){
 
     header label {
         visibility:visible;
@@ -202,6 +212,30 @@ header label{
 
     header input:checked ~ label::before{
         content:'\f00d';
+    }
+
+    .home{
+        flex-flow:column-reverse;
+        justify-content: center;
+    }
+
+    .home .image img{
+        width:60vw;
+        margin-bottom:15vw;
+        
+        
+    }
+
+    .home .content h3 {
+        font-size: 5.6rem;
+    }
+
+    .home .content p{
+        font-size:1.8rem;
+    }
+
+    .home .btn {
+        font-size:2.5rem;
     }
 
 }
