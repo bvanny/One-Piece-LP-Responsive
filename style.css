@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    background:#f9f9f9;
+    background: linear-gradient(to top left, #FFF85A,#D62D2D, #F6FF71) no-repeat; 
 }
 
 section {
@@ -52,6 +52,22 @@ section {
 
 .btn:hover {
     transform: scale(1.2);
+    
+}
+
+.heading{
+    text-align: center;
+    background:#fff000;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size:4.5rem;
+    text-transform: uppercase;
+    padding:1rem;
+}
+
+.features .imggame{
+    width:100%;
 }
 
 header {
@@ -76,6 +92,8 @@ header .logo {
 header .navbar {
     font-size:1.7rem;
     color:var(--blue);
+    text-align: left;
+    font-weight:bold;
 }
 
 header .navbar a{
@@ -107,7 +125,7 @@ header label{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-image: linear-gradient(to top left, #FFF85A,#D62D2D, #F6FF71); 
+    
     background-size: cover;
     background-position:center;
     
@@ -150,6 +168,38 @@ header label{
 }
 
 
+.features .box-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+
+.features .box-container .box{
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    margin:1.5rem;
+    padding:3rem 2rem;
+    background: radial-gradient(ellipse at center, rgba(255,249,118,1) 0%,rgba(255,249,118,0.31) 69%,rgba(30,87,153,0) 100%);
+    opacity: 1;
+    text-align: center;
+}
+
+
+.features .box-container .box h3{
+    font-size:3rem;
+    color:var(--blue);
+    padding-top:1rem;
+}
+
+.features .box-container .box p{
+    font-size:1.8rem;
+    color:#000;
+    padding-top:1rem 0;
+}
 
 /* Media */
 
@@ -194,6 +244,7 @@ header label{
         transform-origin:top;
         transform: scaleY(0);
         opacity:0;
+        transition: .3s linear;
     }
     
 
@@ -208,6 +259,7 @@ header label{
     header input:checked ~ .navbar {
         transform:scaleY(1);
         opacity:1;
+        transition: .3s linear;
     }
 
     header input:checked ~ label::before{
