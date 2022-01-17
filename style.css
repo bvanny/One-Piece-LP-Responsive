@@ -161,10 +161,78 @@ header label{
 
 .home .content p {
     font-size:1.7rem;
-    color:#DEDDFF;
+    color:000;
     text-transform: uppercase;
     padding:1rem 0;
+    font-weight: bold;
+}
+
+
+.newsletter{
+    text-align: center;
+    padding:15rem 1rem;
+    background:url(./imgs/backone.webp) no-repeat;
+    background-size:cover;
+    background-position:center;
+    border-radius:3rem;
+    padding-bottom:3rem;
     
+}
+
+
+.newsletter h3{
+    color:var(--blue);
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+
+.newsletter p{
+    color:var(--red);
+    font-size: 3.2rem;
+    margin:2rem auto;
+    text-align: center;
+    
+}
+
+
+.newsletter form{
+    display:flex;
+    border:.2rem solid #fff;
+    padding:.5rem;
+    border-radius: 5rem;
+    margin:1rem auto;
+    height:5.5rem;
+    max-width:70rem;
+}
+
+.newsletter form input[type="email"] {
+    font-size:2.7rem;
+    background:none;
+    width:100%;
+    color:var(--red);
+    text-transform:none;
+    padding:0 2rem;
+    background:none;
+    
+}
+
+.newsletter form input[type="email"]::placeholder{
+    color:var(--red);
+    text-transform: capitalize;
+    font-size:2.5rem;
+}
+
+.newsletter form input[type="submit"]{
+    background:var(--blue);
+    width:20rem;
+    font-size: 1.7rem;
+    border-radius:5rem;
+    cursor:pointer;
+}
+
+.newsletter form input[type="submit"]:hover{
+    color:#fff;
 }
 
 
@@ -173,6 +241,7 @@ header label{
     align-items:center;
     justify-content:center;
     flex-wrap:wrap;
+   
 }
 
 
@@ -192,30 +261,29 @@ header label{
 .sobre .box-container .box h3{
     font-size:3rem;
     color:var(--blue);
-    padding-top:1rem;
+    padding-top:2rem;
 }
 
 .sobre .box-container .box p{
     font-size:1.8rem;
-    color:#000;
-    padding-top:1rem 0;
+    color:#292929;
+    padding:1rem 0;
+    font-weight: bold;
 }
 
 
-.imgvote {
-    width:15rem;
-    border-radius:3rem;
-}
+
 
 .review .box-container{
     display:flex;
     align-items:center;
     justify-content:center;
     flex-wrap: wrap;
+    
 }
 
 .review .box-container .box{
-    background: radial-gradient(ellipse at center, rgba(225,255,53,0.65) 40%,rgba(235,108,0,0.16) 85%,rgba(235,108,0,0) 35%);
+    background: radial-gradient(ellipse at bottom, rgba(225,255,53,0.65) 60%,rgba(235,108,0,0.16) 99%,rgba(235,108,0,0) 55%);
     margin:1rem;
     padding:1rem;
     text-align:center;
@@ -226,6 +294,122 @@ header label{
     flex:1 1 30rem;
 }
 
+.review .box-container .box .fa-quote-right{
+    position: absolute;
+    top:1rem; right:2rem;
+    font-size:8rem;
+    color:var(--red);
+    opacity: .3;
+}
+
+.review .box-container .box .user img{
+    border-radius:2rem;
+    width:15rem;
+    object-fit:cover;
+    height:12rem;
+    width:12rem;
+    margin-top: 2rem;
+}
+
+.review .box-container .box .user h3{
+    color:#000;
+    font-size:3rem;
+}
+
+.review .box-container .box .user .stars i{
+    color:var(--blue);
+    font-size:2rem;
+    padding:1rem 0;
+}
+
+
+.review .box-container .box .comment {
+    color:#292929;
+    font-size:1.8rem;
+    font-weight:bold;
+    padding:1.4rem;
+}
+
+.footer {
+    padding-top: 1rem;
+    background:url(./imgs/footerone.webp) no-repeat;
+    background-size: cover;
+    background-position:top;
+    
+   
+}
+
+.footer .box-container{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.footer .box-container .box {
+    flex:1 1 25rem;
+    margin:2rem;
+    
+}
+
+.footer .box-container .box h3{
+    font-size: 3.5rem;
+    padding:1rem 0;
+    color:#fff;
+    text-decoration:underline;
+    text-underline-offset: 1rem;
+
+}
+
+.footer .box-container .box p{
+    font-size: 2.5rem;
+    padding:.5rem 0;
+    color:#eee;
+    
+    
+}
+
+
+.footer .box-container .box a {
+    display:block;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+    color:#eee;
+}
+
+
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+}
+
+.footer .box-container .box .info{
+    display: flex;
+    align-items: center;
+}
+
+.footer .box-container .box .info i{
+    margin:5rem 0;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background:#fff;
+    color:var(--blue);
+    font-size:1.5rem;
+    height:4.5rem;
+    width:4.5rem;
+    line-height:4.5rem;
+    text-align:center;
+}
+
+.footer .credit{
+    display:block;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+    color:#eee;
+    font-weight:normal;
+    letter-spacing:.1rem;
+    border-top:.1rem solid #fff5;
+    padding:2.5rem 1rem;
+    text-align:center;
+}
 
 
 /* Media */
@@ -316,6 +500,10 @@ header label{
     .home .btn {
         font-size:2.5rem;
     }
+
+  
+        
+
 
 }
 
