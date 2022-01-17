@@ -184,6 +184,7 @@ header label{
     color:var(--blue);
     font-size: 5rem;
     text-transform: uppercase;
+    font-weight:bold;
 }
 
 
@@ -192,7 +193,7 @@ header label{
     font-size: 3.2rem;
     margin:2rem auto;
     text-align: center;
-    
+    font-weight:bold;
 }
 
 
@@ -214,13 +215,14 @@ header label{
     text-transform:none;
     padding:0 2rem;
     background:none;
-    
+    font-weight:bold;
 }
 
 .newsletter form input[type="email"]::placeholder{
     color:var(--red);
     text-transform: capitalize;
     font-size:2.5rem;
+    font-weight:bold;
 }
 
 .newsletter form input[type="submit"]{
@@ -300,6 +302,7 @@ header label{
     font-size:8rem;
     color:var(--red);
     opacity: .3;
+    
 }
 
 .review .box-container .box .user img{
@@ -320,6 +323,7 @@ header label{
     color:var(--blue);
     font-size:2rem;
     padding:1rem 0;
+    
 }
 
 
